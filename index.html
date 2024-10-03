@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outrun the Cat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Welcome to Outrun the Cat!</h1>
+        <img id="mouse-image" src="mouse.jpg" alt="Mouse" style="display: block;"> <!-- Mouse image displayed initially -->
+        <button id="playEasy">Easy Mode</button>
+        <button id="playMedium">Medium Mode</button>
+        <button id="playHard">Hard Mode</button>
+
+        <div id="gameArea" style="display: none;">
+            <div id="sentence-display"></div>
+            <input type="text" id="typing-input" autofocus>
+            <div id="current-wpm-display">Current Speed: <span id="current-wpm-value">0</span> WPM</div>
+            <div id="last-wpm-display">Last Escape Speed: <span id="last-wpm-value">0</span> WPM</div>
+            <div id="leaderboard">
+                <h3>Leaderboard</h3>
+                <ol id="leaderboard-list"></ol>
+            </div>
+            <img id="cat-image" src="cat.gif" alt="Cat" style="display: none;"> <!-- Cat image for chase mode -->
+        </div>
+    </div>
+    <!-- Audio element for keyboard sound effect -->
+    <audio id="keyboard-sound" src="keyboard.mp3" preload="auto" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>

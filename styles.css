@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('alley-background.jpg'); /* Change to a suitable alley background */
+    background-size: cover;
+    background-position: center;
+	background-color: rgba(125, 213, 175, 0.8);
+}
+
+#mouse-image, #cat-image {
+    width: 110px; /* Adjust the size as needed */
+    height: auto;
+    position: absolute; /* Positioning the image on the side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    left: 10px; /* Place it on the left side */
+}
+
+#game-container {
+    position: relative; /* Needed for absolute positioning of child elements */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%; /* Adjust width to prevent stretching when images appear */
+    margin-left: auto;
+    margin-right: auto;
+}
+#sentence-display {
+    margin: 20px;
+    padding: 10px;
+    border: 2px dashed grey;
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#typing-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
